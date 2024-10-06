@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Church - FaithHub Connect</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="find-a-church.html">Find a Church</a></li>
+                <li><a href="sermons.html">Watch Sermons</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="add-a-church.html">Add a Church</a></li> <!-- Link to the new page -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="search-churches">
+            <h2>Find a Church</h2>
+            <input type="text" id="searchInput" placeholder="Search for a church..." onkeyup="searchChurch()">
+            <ul id="churchList">
+                <!-- Example of a church entry with data attributes -->
+                <li data-name="north church" data-address="1601 W Memorial Rd, Oklahoma City, OK 73134" data-phone="+1 405 341 1200">
+                    <h3>North Church</h3>
+                    <p><strong>Address:</strong> 1601 W Memorial Rd, Oklahoma City, OK 73134</p>
+                    <p><strong>Phone:</strong> +1 405 341 1200</p>
+                </li>
+                <li data-name="st eugene's catholic church okc" data-address="2400 W Hefner Rd, The Village, OK 73120" data-phone=" +1 405 751 7115">
+                    <h3>ST Eugene's Catholic Church OKC</h3>
+                    <p><strong>Address:</strong> 2400 W Hefner Rd, The Village, OK 73120</p>
+                    <p><strong>Phone:</strong> +1 405 751 7115</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FaithHub Connect | All rights reserved</p>
+    </footer>
+</body>
+</html>
